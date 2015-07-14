@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{note.title}}</title>
+    </head>
+    <body>
+        Title: {{note.title}} <br/>
+        Content: {{note.content}}<br/>
+        Due Date: {{note.due}}<br/>
+        Folder: {{note.folder}}<br/>
+        Tag(s):
+        <ul>
+        <!--https://docs.djangoproject.com/en/1.7/ref/templates/builtins/#for-->
+        {%for t in note.tag.all%}
+            <li>{{t.title}}</li>
+        {%endfor%}
+        </ul>
+    </body>
+</html>

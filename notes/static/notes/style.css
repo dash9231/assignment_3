@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+* { box-sizing:border-box; }
+body { background:url(http://downloads.dvq.co.nz/assets/img/downloads/hand-crafted-wood-vertical/2560x1440.png) #cacaca; margin:30px; }
+
+.postit  { 
+	display: block;
+	padding:25px 25px 40px;
+	margin:0 auto 20px auto;
+	width:250px;
+	height:auto; 
+	min-height:250px;
+	font:20px 'Pacifico',cursive; 
+	line-height:1.5;
+	border:0;
+	border-radius:3px;
+	background: -webkit-linear-gradient(#F9EFAF, #F7E98D);
+	background: -moz-linear-gradient(#F9EFAF, #F7E98D);
+	background: -o-linear-gradient(#F9EFAF, #F7E98D);
+	background: -ms-linear-gradient(#F9EFAF, #F7E98D);
+	background: linear-gradient(#F9EFAF, #F7E98D);
+	box-shadow:0 4px 6px rgba(0,0,0,0.1);
+	overflow:hidden;
+	transition:box-shadow 0.5s ease;
+	font-smoothing:subpixel-antialiased;
+	max-width:520px;
+	/*max-height:250px;*/
+}
+
+a:link{
+    	text-decoration: None;
+}
+
+
+textarea:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
+textarea:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
+
+.rotatevertical{
+    font-size:0.6em;
+    width:0px;
+    height:0px;
+    margin-top:-25px;
+    margin-left:0px;
+    color:white;
+    -ms-transform:rotate(-45deg); /* IE 9 */
+    -moz-transform:rotate(-45deg); /* Firefox */
+    -webkit-transform:rotate(-45deg); /* Safari and Chrome */
+    -o-transform:rotate(-45deg); /* Opera */
+}
+
+/*https://css-tricks.com/examples/ShapesOfCSS/*/
+#base {
+  
+  	position:static;
+	width: 0px;
+	height: 0px;
+	float:left;
+	margin-left:-25px;
+	margin-right:25px;
+	margin-top:-40px;
+	border-style: solid;
+	border-width: 70px 70px 0 0;
+	border-color: #007bff transparent transparent transparent;
+}

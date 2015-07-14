@@ -1,0 +1,676 @@
+[
+{
+  "fields": {
+    "model": "logentry",
+    "name": "log entry",
+    "app_label": "admin"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 1
+},
+{
+  "fields": {
+    "model": "permission",
+    "name": "permission",
+    "app_label": "auth"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 2
+},
+{
+  "fields": {
+    "model": "group",
+    "name": "group",
+    "app_label": "auth"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 3
+},
+{
+  "fields": {
+    "model": "user",
+    "name": "user",
+    "app_label": "auth"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 4
+},
+{
+  "fields": {
+    "model": "contenttype",
+    "name": "content type",
+    "app_label": "contenttypes"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 5
+},
+{
+  "fields": {
+    "model": "session",
+    "name": "session",
+    "app_label": "sessions"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 6
+},
+{
+  "fields": {
+    "model": "note",
+    "name": "note",
+    "app_label": "notes"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 7
+},
+{
+  "fields": {
+    "model": "folder",
+    "name": "folder",
+    "app_label": "notes"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 8
+},
+{
+  "fields": {
+    "model": "tag",
+    "name": "tag",
+    "app_label": "notes"
+  },
+  "model": "contenttypes.contenttype",
+  "pk": 9
+},
+{
+  "fields": {
+    "expire_date": "2015-07-13T01:40:37.996Z",
+    "session_data": "YjkxODYyYzZkYzA0NGY4N2NkNzA2NjgyNzk2Nzk2MTBhNDRiYzk3OTp7Il9hdXRoX3VzZXJfaGFzaCI6ImU0MzEwZmEzZGUzNjM4MTI3MTRiMzE1NmMzMTE2NzNmY2FlNTQyZjgiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjF9"
+  },
+  "model": "sessions.session",
+  "pk": "0tuumiyjn85ifmkdle0vx9z3yigy9ex0"
+},
+{
+  "fields": {
+    "expire_date": "2015-07-09T15:39:48.902Z",
+    "session_data": "YjkxODYyYzZkYzA0NGY4N2NkNzA2NjgyNzk2Nzk2MTBhNDRiYzk3OTp7Il9hdXRoX3VzZXJfaGFzaCI6ImU0MzEwZmEzZGUzNjM4MTI3MTRiMzE1NmMzMTE2NzNmY2FlNTQyZjgiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOjF9"
+  },
+  "model": "sessions.session",
+  "pk": "6u19rsd6o08ryw3kklz6v5es0ob07my2"
+},
+{
+  "fields": {
+    "created": "2015-06-25T15:44:08.217Z",
+    "color": "yellow",
+    "title": "Bake cake",
+    "due": "2015-06-25T15:44:32.264Z",
+    "content": "Bake a rainbow cake with strawberries and chocolate shavings",
+    "tag": [
+      1,
+      2
+    ],
+    "done": false,
+    "fontcolor": "black",
+    "folder": 1
+  },
+  "model": "notes.note",
+  "pk": 1
+},
+{
+  "fields": {
+    "created": "2015-06-25T15:45:15.726Z",
+    "color": "magenta",
+    "title": "Buy toys",
+    "due": "2015-06-25T16:47:51.366Z",
+    "content": "For Ashley, Sophie, Chloe and Natalie",
+    "tag": [
+      1,
+      2
+    ],
+    "done": false,
+    "fontcolor": "white",
+    "folder": 2
+  },
+  "model": "notes.note",
+  "pk": 2
+},
+{
+  "fields": {
+    "created": "2015-06-25T15:45:58.967Z",
+    "color": "cyan",
+    "title": "Buy Streamers",
+    "due": "2015-06-25T16:47:36.680Z",
+    "content": "From Beach Road Concorde Hotel",
+    "tag": [
+      1
+    ],
+    "done": false,
+    "fontcolor": "black",
+    "folder": 2
+  },
+  "model": "notes.note",
+  "pk": 3
+},
+{
+  "fields": {
+    "created": "2015-06-27T05:15:20.943Z",
+    "color": "yellow",
+    "title": "Buy diaper",
+    "due": "2015-06-27T05:15:31.539Z",
+    "content": "Size: XL\r\n2 packets",
+    "tag": [
+      2
+    ],
+    "done": false,
+    "fontcolor": "black",
+    "folder": 2
+  },
+  "model": "notes.note",
+  "pk": 4
+},
+{
+  "fields": {
+    "created": "2015-07-03T08:57:04.512Z",
+    "color": "yellow",
+    "title": "Learn Japanese",
+    "due": "2015-07-03T08:57:39.501Z",
+    "content": "Sign up for online course on Udemy",
+    "tag": [],
+    "done": false,
+    "fontcolor": "black",
+    "folder": 1
+  },
+  "model": "notes.note",
+  "pk": 5
+},
+{
+  "fields": {
+    "color": "purple",
+    "fontcolor": "white",
+    "title": "Todo"
+  },
+  "model": "notes.folder",
+  "pk": 1
+},
+{
+  "fields": {
+    "color": "purple",
+    "fontcolor": "white",
+    "title": "Shopping"
+  },
+  "model": "notes.folder",
+  "pk": 2
+},
+{
+  "fields": {
+    "color": "red",
+    "fontcolor": "black",
+    "title": "birthday"
+  },
+  "model": "notes.tag",
+  "pk": 1
+},
+{
+  "fields": {
+    "color": "red",
+    "fontcolor": "black",
+    "title": "kids"
+  },
+  "model": "notes.tag",
+  "pk": 2
+},
+{
+  "fields": {
+    "codename": "add_logentry",
+    "name": "Can add log entry",
+    "content_type": 1
+  },
+  "model": "auth.permission",
+  "pk": 1
+},
+{
+  "fields": {
+    "codename": "change_logentry",
+    "name": "Can change log entry",
+    "content_type": 1
+  },
+  "model": "auth.permission",
+  "pk": 2
+},
+{
+  "fields": {
+    "codename": "delete_logentry",
+    "name": "Can delete log entry",
+    "content_type": 1
+  },
+  "model": "auth.permission",
+  "pk": 3
+},
+{
+  "fields": {
+    "codename": "add_permission",
+    "name": "Can add permission",
+    "content_type": 2
+  },
+  "model": "auth.permission",
+  "pk": 4
+},
+{
+  "fields": {
+    "codename": "change_permission",
+    "name": "Can change permission",
+    "content_type": 2
+  },
+  "model": "auth.permission",
+  "pk": 5
+},
+{
+  "fields": {
+    "codename": "delete_permission",
+    "name": "Can delete permission",
+    "content_type": 2
+  },
+  "model": "auth.permission",
+  "pk": 6
+},
+{
+  "fields": {
+    "codename": "add_group",
+    "name": "Can add group",
+    "content_type": 3
+  },
+  "model": "auth.permission",
+  "pk": 7
+},
+{
+  "fields": {
+    "codename": "change_group",
+    "name": "Can change group",
+    "content_type": 3
+  },
+  "model": "auth.permission",
+  "pk": 8
+},
+{
+  "fields": {
+    "codename": "delete_group",
+    "name": "Can delete group",
+    "content_type": 3
+  },
+  "model": "auth.permission",
+  "pk": 9
+},
+{
+  "fields": {
+    "codename": "add_user",
+    "name": "Can add user",
+    "content_type": 4
+  },
+  "model": "auth.permission",
+  "pk": 10
+},
+{
+  "fields": {
+    "codename": "change_user",
+    "name": "Can change user",
+    "content_type": 4
+  },
+  "model": "auth.permission",
+  "pk": 11
+},
+{
+  "fields": {
+    "codename": "delete_user",
+    "name": "Can delete user",
+    "content_type": 4
+  },
+  "model": "auth.permission",
+  "pk": 12
+},
+{
+  "fields": {
+    "codename": "add_contenttype",
+    "name": "Can add content type",
+    "content_type": 5
+  },
+  "model": "auth.permission",
+  "pk": 13
+},
+{
+  "fields": {
+    "codename": "change_contenttype",
+    "name": "Can change content type",
+    "content_type": 5
+  },
+  "model": "auth.permission",
+  "pk": 14
+},
+{
+  "fields": {
+    "codename": "delete_contenttype",
+    "name": "Can delete content type",
+    "content_type": 5
+  },
+  "model": "auth.permission",
+  "pk": 15
+},
+{
+  "fields": {
+    "codename": "add_session",
+    "name": "Can add session",
+    "content_type": 6
+  },
+  "model": "auth.permission",
+  "pk": 16
+},
+{
+  "fields": {
+    "codename": "change_session",
+    "name": "Can change session",
+    "content_type": 6
+  },
+  "model": "auth.permission",
+  "pk": 17
+},
+{
+  "fields": {
+    "codename": "delete_session",
+    "name": "Can delete session",
+    "content_type": 6
+  },
+  "model": "auth.permission",
+  "pk": 18
+},
+{
+  "fields": {
+    "codename": "add_note",
+    "name": "Can add note",
+    "content_type": 7
+  },
+  "model": "auth.permission",
+  "pk": 19
+},
+{
+  "fields": {
+    "codename": "change_note",
+    "name": "Can change note",
+    "content_type": 7
+  },
+  "model": "auth.permission",
+  "pk": 20
+},
+{
+  "fields": {
+    "codename": "delete_note",
+    "name": "Can delete note",
+    "content_type": 7
+  },
+  "model": "auth.permission",
+  "pk": 21
+},
+{
+  "fields": {
+    "codename": "add_folder",
+    "name": "Can add folder",
+    "content_type": 8
+  },
+  "model": "auth.permission",
+  "pk": 22
+},
+{
+  "fields": {
+    "codename": "change_folder",
+    "name": "Can change folder",
+    "content_type": 8
+  },
+  "model": "auth.permission",
+  "pk": 23
+},
+{
+  "fields": {
+    "codename": "delete_folder",
+    "name": "Can delete folder",
+    "content_type": 8
+  },
+  "model": "auth.permission",
+  "pk": 24
+},
+{
+  "fields": {
+    "codename": "add_tag",
+    "name": "Can add tag",
+    "content_type": 9
+  },
+  "model": "auth.permission",
+  "pk": 25
+},
+{
+  "fields": {
+    "codename": "change_tag",
+    "name": "Can change tag",
+    "content_type": 9
+  },
+  "model": "auth.permission",
+  "pk": 26
+},
+{
+  "fields": {
+    "codename": "delete_tag",
+    "name": "Can delete tag",
+    "content_type": 9
+  },
+  "model": "auth.permission",
+  "pk": 27
+},
+{
+  "fields": {
+    "username": "lorraine",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": true,
+    "is_staff": true,
+    "last_login": "2015-06-29T01:40:37.980Z",
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$12000$Bvj00eb43o8S$gvpE6MDomnKMg8fLhf3z3MSKsoR8Q8cC4pOTL+5b8tg=",
+    "email": "",
+    "date_joined": "2015-06-25T15:38:22.280Z"
+  },
+  "model": "auth.user",
+  "pk": 1
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-25T15:42:57.093Z",
+    "object_repr": "Todo",
+    "object_id": "1",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 1
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-25T15:43:04.939Z",
+    "object_repr": "birthday",
+    "object_id": "1",
+    "change_message": "",
+    "user": 1,
+    "content_type": 9
+  },
+  "model": "admin.logentry",
+  "pk": 2
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-25T15:43:17.193Z",
+    "object_repr": "kids",
+    "object_id": "2",
+    "change_message": "",
+    "user": 1,
+    "content_type": 9
+  },
+  "model": "admin.logentry",
+  "pk": 3
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-25T15:44:08.219Z",
+    "object_repr": "Bake cake",
+    "object_id": "1",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 4
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2015-06-25T15:44:32.266Z",
+    "object_repr": "Bake cake",
+    "object_id": "1",
+    "change_message": "Changed content and folder.",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 5
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-25T15:45:15.729Z",
+    "object_repr": "Buy toys",
+    "object_id": "2",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 6
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-25T15:45:31.155Z",
+    "object_repr": "Shopping",
+    "object_id": "2",
+    "change_message": "",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 7
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-25T15:45:58.971Z",
+    "object_repr": "Buy Streamers",
+    "object_id": "3",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 8
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2015-06-25T15:46:06.109Z",
+    "object_repr": "Buy toys",
+    "object_id": "2",
+    "change_message": "Changed folder.",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 9
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2015-06-25T16:47:36.683Z",
+    "object_repr": "Buy Streamers",
+    "object_id": "3",
+    "change_message": "Changed color.",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 10
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2015-06-25T16:47:51.370Z",
+    "object_repr": "Buy toys",
+    "object_id": "2",
+    "change_message": "Changed color and fontcolor.",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 11
+},
+{
+  "fields": {
+    "action_flag": 1,
+    "action_time": "2015-06-27T05:15:20.978Z",
+    "object_repr": "Buy diaper",
+    "object_id": "4",
+    "change_message": "",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 12
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2015-06-27T05:15:31.886Z",
+    "object_repr": "Buy diaper",
+    "object_id": "4",
+    "change_message": "Changed folder.",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 13
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2015-07-03T08:57:04.513Z",
+    "object_repr": "Todo",
+    "object_id": "1",
+    "change_message": "Added note \"Learn Japanese\".",
+    "user": 1,
+    "content_type": 8
+  },
+  "model": "admin.logentry",
+  "pk": 14
+},
+{
+  "fields": {
+    "action_flag": 2,
+    "action_time": "2015-07-03T08:57:39.504Z",
+    "object_repr": "Learn Japanese",
+    "object_id": "5",
+    "change_message": "Changed content.",
+    "user": 1,
+    "content_type": 7
+  },
+  "model": "admin.logentry",
+  "pk": 15
+}
+]
