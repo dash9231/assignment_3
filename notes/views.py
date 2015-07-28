@@ -1,9 +1,12 @@
+import re
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.core.urlresolvers import reverse
-from .models import Note
-import re
+from django.core.urlresolvers import reverse_lazy
+from notes.models import Note, Folder, Tag
 from django.db.models import Q
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from notes.forms import NoteForm
+from django.views.generic import DetailView, ListView
 
 def notes_list(request, folder):
     if folder == "":
@@ -14,8 +17,8 @@ def notes_list(request, folder):
         total = allnotes.count();
     return render(request, 'notes/index.html', {'notes': allnotes, 'total':total})
 
-def note(request, note_id):
-    note = Note.objects.get(id=note_id)
+def note(request, pk):
+    note = Note.objects.get(id=pk)
     return render(request, 'notes/note.html', {'note':note})
     
     
@@ -41,4 +44,30 @@ def notes_tags(request, tags):
     # Query the model
     allnotes = Note.objects.filter(query).distinct().order_by('folder__title')
     total = allnotes.count();
-    return render(request, 'notes/index.html', {'pieces':pieces, 'notes': allnotes, 'total':total})   
+    return render(request, 'notes/index.html', {'pieces':pieces, 'notes': allnotes, 'total':total})
+
+class NoteList(ListView):
+    #https://docs.djangoproject.com/en/1.7/topics/class-based-views/generic-display/
+    model = Note
+    
+    def get_queryset(self):
+        folder = self.kwargs['folder']
+        if folder == '':
+            return Note.objects.all()
+        else:
+            return Note.objects.filter(folder__title__iexact=folder)
+
+class NoteCreate(CreateView):
+    model = Note
+    form_class = NoteForm
+    
+class NoteUpdate(UpdateView):
+    model = Note
+    form_class = NoteForm
+
+class NoteDetail(DetailView):
+    model = Note
+
+class NoteDelete(DeleteView):
+    model = Note
+    success_url = reverse_lazy('listall')

@@ -1,0 +1,27 @@
+{%extends 'notes/base.html'%}
+{%load staticfiles%}
+
+{%block content%}
+    <link rel="stylesheet" type="text/css" href="{% static 'notes/style.css' %}" />
+    {%if total%}
+        <h2>Total number of notes:{{total}}</h2>
+    {%endif%}
+    {% if object_list  %}
+        {% for note in object_list  %}
+            <a href={%url 'note_update' note.id %}>
+                <div class="postit" style="background:{{note.color}};color:{{note.fontcolor}}">
+                    <div id="base" style="border-color:{{note.folder.color}} transparent transparent transparent;"><div class="rotatevertical">{{note.folder.title}}</div></div>
+                    <br>
+                    <u>{{note.title}}</u>
+                    <br>
+                    {{note.content}}
+                    <br>
+                    <br>
+                    Due On: {{note.due}}
+                </div>
+            </a>
+        {% endfor %}
+    {% else %}
+        <p>No notes are available.</p>
+    {% endif %}
+{%endblock%}
