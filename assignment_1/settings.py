@@ -44,6 +44,7 @@ INSTALLED_APPS = (
     'notes',
     'bootstrap3',
     'crispy_forms',
+    'accounts',
 )
 
 
@@ -90,3 +91,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#Authentication at the end of settings.py file
+LOGIN_URL = '/accounts/login' #URL to forward to when the page needs user to login
+LOGIN_REDIRECT_URL = '/list/' #Page to forward user after user login
+
+MEDIA_ROOT = os.path.join(BASE_DIR, "media","profile_images")
+MEDIA_URL = '/media/profile_images/'

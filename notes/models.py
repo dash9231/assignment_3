@@ -1,9 +1,11 @@
 from django.db import models
 from django.views.generic import ListView,UpdateView
 from django.core.urlresolvers import reverse
+from accounts.models import UserProfile
 
 # Create your models here.
 class Note(models.Model):
+    user = models.ForeignKey(UserProfile, blank=True, null=True)
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True) #not a required field
     due = models.DateTimeField(blank=False) #due datetime is not optional
@@ -39,5 +41,3 @@ class Tag(models.Model):
     
     def __str__(self):
         return self.title
-
-
